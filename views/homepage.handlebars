@@ -1,0 +1,9 @@
+<h1>Tech Blog Homepage</h1>
+
+{{#each posts}}
+  <div class="post">
+    <h2>{{this.title}}</h2>
+    <p>By {{this.user.username}} on {{this.createdAt}}</p>
+    <p>{{this.content}}</p>
+  </div>
+{{/each}}
